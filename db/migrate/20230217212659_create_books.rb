@@ -3,8 +3,8 @@ class CreateBooks < ActiveRecord::Migration[6.1]
     create_table :books do |t|
       t.string :title
       t.string :author
-      t.string :genre
-      t.string :comment
+      t.integer :bookshelf_id
+      t.boolean :read
     end
   end
 end

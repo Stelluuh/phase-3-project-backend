@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2023_02_22_212012) do
     t.integer "reader_id"
   end
 
-  create_table "bookshelfs", force: :cascade do |t|
+  create_table "bookshelves", force: :cascade do |t|
     t.string "genre"
     t.string "location"
   end

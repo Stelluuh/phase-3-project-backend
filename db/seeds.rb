@@ -1,7 +1,7 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-Book.create(title: "Name of the Wind", author: "Patrick Rothfuss", read: true)
+Book.create(title: "Name of the Wind", author: "Patrick Rothfuss", read: true, reader_id: 1)
 Book.create(title: "A Wise Man's Fear", author: "Patrick Rothfuss", read: true)
 Book.create(title: "Harry Potter and the Sorcerer's Stone", author: "J.K. Rowling", read: false)
 Book.create(title: "The Complete Sherlock Holmes", author: "Sir Arthur Conan Doyle", read: false)
@@ -9,6 +9,10 @@ Book.create(title: "The Complete Sherlock Holmes", author: "Sir Arthur Conan Doy
 Reader.create(name: 'Stella')
 Reader.create(name: 'Brandin')
 Reader.create(name: 'Elliot')
+
+Bookshelf.create(genre: "Fantasy Fiction", location: "Living Room")
+Bookshelf.create(genre: "Crime Fiction/Mystery", location: "Bedroom")
+Bookshelf.create(genre: "Fantasy Thriller", location: "Bedroom")
 
 puts "✅ Done seeding!"
 

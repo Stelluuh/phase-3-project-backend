@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2023_02_22_212012) do
   end
 
   create_table "readers", force: :cascade do |t|
-    t.string "Name"
+    t.string "name"
   end
 
 end

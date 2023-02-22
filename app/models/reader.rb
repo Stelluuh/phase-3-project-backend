@@ -1,4 +1,3 @@
 class Reader < ActiveRecord::Base
-    has_many :books
-    has_many :bookshelfs
+   has_many :books
 end

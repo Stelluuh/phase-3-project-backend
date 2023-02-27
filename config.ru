@@ -12,4 +12,5 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+# use BooksController - add this if you want to separate your controllers.
 run ApplicationController

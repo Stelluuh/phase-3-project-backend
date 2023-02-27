@@ -1,10 +1,10 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-Book.create(title: "Name of the Wind", author: "Patrick Rothfuss", read: true, reader_id: 1)
-Book.create(title: "A Wise Man's Fear", author: "Patrick Rothfuss", read: true)
-Book.create(title: "Harry Potter and the Sorcerer's Stone", author: "J.K. Rowling", read: false)
-Book.create(title: "The Complete Sherlock Holmes", author: "Sir Arthur Conan Doyle", read: false)
+Book.create(title: "Name of the Wind", author: "Patrick Rothfuss", bookshelf_id: 1, read: true, reader_id: 1)
+Book.create(title: "A Wise Man's Fear", author: "Patrick Rothfuss", bookshelf_id: 1, read: true, reader_id: 1)
+Book.create(title: "Harry Potter and the Sorcerer's Stone", author: "J.K. Rowling", bookshelf_id: 1, read: true, reader_id: 2)
+Book.create(title: "The Complete Sherlock Holmes", author: "Sir Arthur Conan Doyle", bookshelf_id: 2, read: false, reader_id: 1)
 
 Reader.create(name: 'Stella')
 Reader.create(name: 'Brandin')

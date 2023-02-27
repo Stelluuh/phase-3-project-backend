@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2023_02_22_212012) do
     t.string "genre"
     t.integer "bookshelf_id"
     t.boolean "read"
+    t.integer "reader_id"
   end
 
   create_table "bookshelves", force: :cascade do |t|

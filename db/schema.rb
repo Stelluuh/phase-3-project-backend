@@ -15,13 +15,12 @@ ActiveRecord::Schema.define(version: 2023_02_22_212012) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
+    t.string "genre"
     t.integer "bookshelf_id"
     t.boolean "read"
-    t.integer "reader_id"
   end
 
   create_table "bookshelves", force: :cascade do |t|
-    t.string "genre"
     t.string "location"
   end
 

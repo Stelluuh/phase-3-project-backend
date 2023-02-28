@@ -3,10 +3,12 @@ require 'pry'
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
+
+  #------------BOOKS--------------
   # READ all books
   get '/books' do
     books = Book.all.order(:title)
-    books.to_json
+    books.to_json(include: :bookshelf)
   end
 
   # READ a single book
@@ -36,4 +38,18 @@ class ApplicationController < Sinatra::Base
   end
 
 
+  #------------READERS-------------
+# READ all users
+  get '/readers' do
+    readers = Reader.all
+    readers.to_json
+  end
+
+  # CREATE a reader
+  post '/readers' do
+    reader = Reader.create(
+      name: params[:name]
+    )
+    reader.to_json
+  end
 end

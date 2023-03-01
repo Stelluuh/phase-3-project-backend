@@ -30,6 +30,15 @@ class ApplicationController < Sinatra::Base
     book.to_json
   end
 
+  # PATCH a single book
+  patch '/books/:id' do
+    book = Book.find(params[:id])
+    book.update(
+      location: params[:location],
+      read: params[:read]
+    )
+  end
+
   # DESTROY a single book
   delete '/books/:id' do
     book = Book.find(params[:id])
@@ -42,7 +51,7 @@ class ApplicationController < Sinatra::Base
 # READ all users
   get '/readers' do
     readers = Reader.all
-    readers.to_json(include: :books)
+    readers.to_json(include: {books: {include: :bookshelf}})
   end
 
   # CREATE a reader

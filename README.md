@@ -1,5 +1,10 @@
 # Phase 3 Project Guidelines
 
+## INSTRUCTIONS
+1. run bundle install
+2. run bundle exec rake server
+
+
 ## Learning Goals
 
 - Build a web basic API with Sinatra and Active Record to support a React

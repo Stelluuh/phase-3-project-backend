@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
 # READ all users
   get '/readers' do
     readers = Reader.all
-    readers.to_json
+    readers.to_json(include: :books)
   end
 
   # CREATE a reader

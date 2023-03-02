@@ -12,7 +12,7 @@ Reader.create(name: 'Elliot')
 
 Bookshelf.create(location: "Living Room")
 Bookshelf.create(location: "Bedroom")
-Bookshelf.create(location: "Bedroom")
+Bookshelf.create(location: "KidsRoom")
 
 puts "✅ Done seeding!"
 

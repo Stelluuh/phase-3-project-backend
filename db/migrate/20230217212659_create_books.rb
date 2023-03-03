@@ -5,7 +5,7 @@ class CreateBooks < ActiveRecord::Migration[6.1]
       t.string :author
       t.string :genre
       t.integer :bookshelf_id
-      t.boolean :read
+      t.string :read
       t.string :reader
     end
   end

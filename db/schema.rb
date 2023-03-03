@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2023_02_22_195224) do
     t.string "author"
     t.string "genre"
     t.integer "bookshelf_id"
-    t.boolean "read"
+    t.string "read"
     t.string "reader"
   end
 

@@ -11,11 +11,11 @@ class ApplicationController < Sinatra::Base
     books.to_json(include: :bookshelf)
   end
 
-  # READ a single book
-  get '/books/:id' do
-    book = Book.find(params[:id])
-    book.to_json
-  end
+  # # READ a single book
+  # get '/books/:id' do
+  #   book = Book.find(params[:id])
+  #   book.to_json
+  # end
 
   # CREATE a new book
   post '/books' do
@@ -48,13 +48,13 @@ class ApplicationController < Sinatra::Base
   
   #------------Bookshelves-------------
 # READ all bookshelves
-  get '/bookshelfs' do
+  get '/bookshelves' do
     readers = Bookshelf.all
     readers.to_json(include: :books)
   end
 
   # CREATE a reader
-  post '/bookshelfs' do
+  post '/bookshelves' do
     reader = Bookshelf.create(
       location: params[:location]
     )

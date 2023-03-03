@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_22_212012) do
+ActiveRecord::Schema.define(version: 2023_02_22_201055) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -18,15 +18,11 @@ ActiveRecord::Schema.define(version: 2023_02_22_212012) do
     t.string "genre"
     t.integer "bookshelf_id"
     t.boolean "read"
-    t.integer "reader_id"
+    t.string "reader"
   end
 
   create_table "bookshelves", force: :cascade do |t|
     t.string "location"
-  end
-
-  create_table "readers", force: :cascade do |t|
-    t.string "name"
   end
 
 end

@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
       genre: params[:genre],
       bookshelf_id: params[:bookshelf_id],
       read: params[:read],
-      reader_id: params[:reader_id]
+      reader: params[:reader]
     )
     book.to_json
   end
@@ -45,21 +45,36 @@ class ApplicationController < Sinatra::Base
     book.destroy
     book.to_json
   end
-
-
-  #------------READERS-------------
-# READ all users
-  get '/readers' do
-    readers = Reader.all
-    readers.to_json(include: {books: {include: :bookshelf}})
+  
+  #------------Bookshelves-------------
+# READ all bookshelves
+  get '/bookshelfs' do
+    readers = Bookshelf.all
+    readers.to_json(include: :books)
   end
 
   # CREATE a reader
-  post '/readers' do
-    reader = Reader.create(
-      name: params[:name]
+  post '/bookshelfs' do
+    reader = Bookshelf.create(
+      location: params[:location]
     )
     reader.to_json
   end
   
 end
+
+
+#------------READERS-------------
+# # READ all users
+#   get '/readers' do
+#     readers = Reader.all
+#     readers.to_json(include: {books: {include: :bookshelf}})
+#   end
+
+#   # CREATE a reader
+#   post '/readers' do
+#     reader = Reader.create(
+#       name: params[:name]
+#     )
+#     reader.to_json
+#   end

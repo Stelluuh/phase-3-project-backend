@@ -34,7 +34,6 @@ class ApplicationController < Sinatra::Base
   patch '/books/:id' do
     book = Book.find(params[:id])
     book.update(
-      location: params[:location],
       read: params[:read]
     )
   end

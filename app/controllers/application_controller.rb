@@ -60,19 +60,3 @@ class ApplicationController < Sinatra::Base
   end
   
 end
-
-
-#------------READERS-------------
-# # READ all users
-#   get '/readers' do
-#     readers = Reader.all
-#     readers.to_json(include: {books: {include: :bookshelf}})
-#   end
-
-#   # CREATE a reader
-#   post '/readers' do
-#     reader = Reader.create(
-#       name: params[:name]
-#     )
-#     reader.to_json
-#   end

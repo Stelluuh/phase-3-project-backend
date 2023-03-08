@@ -1,10 +1,24 @@
-# Phase 3 Project Guidelines
+# BookSelf
+This is an app called BookSelf that was made using React for the frontend and Sinatra for the backend. 
 
-## INSTRUCTIONS
+Bookself allows you to keep track of all the books in your household. To get started, click on the Bookshelves tab on the navigation bar. It will navigate you to a page that shows a list of Locations for each bookshelf. At the bottom of the page, you have the ability to add a new location. You can click on any of the locations listed and it will show you a list of all the books in that bookshelf. Use the form at the bottom of the page to add a new book to the shelf. You can add as many as you want. You also have an Edit function to update the read status of your book or correct any typos you see. If you no longer own the book that is on the shelf, NO WORRIES! you have the ability to delete the book by simply clicking on the delete button. 
+
+# Instructions 
+
+## BACKEND/SINATRA
 1. run bundle install
 2. run bundle exec rake server
 
+## FRONTEND/CLIENT-SIDE
+1. Fork and clone this project: https://github.com/Stelluuh/phase-3-project-frontend-bookself
+2. Locate the project in your terminal
+3. Open the project in your preferred source-code editor (ex: VS Code)
+4. Open the my-app-frontend file in your terminal and run: npm install
+    (note: this project was created using React V6. If you run into issues, make sure to install the appropriate package, run npm install react-router-dom@6)
+5. Under the same file, run the json-server: npm run server
+6. Run React server: npm start
 
+# Phase 3 Project Guidelines
 ## Learning Goals
 
 - Build a web basic API with Sinatra and Active Record to support a React

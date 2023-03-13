@@ -1,7 +1,8 @@
 # BookSelf
-This is an app called BookSelf that was made using React for the frontend and Sinatra for the backend. 
+This is an app called BookSelf that was made using React for the frontend and Sinatra for the backend. Bookself allows you to keep track of all the books in your household. 
 
-Bookself allows you to keep track of all the books in your household. To get started, click on the Bookshelves tab on the navigation bar. It will navigate you to a page that shows a list of Locations for each bookshelf. At the bottom of the page, you have the ability to add a new location. You can click on any of the locations listed and it will show you a list of all the books in that bookshelf. Use the form at the bottom of the page to add a new book to the shelf. You can add as many as you want. You also have an Edit function to update the read status of your book or correct any typos you see. If you no longer own the book that is on the shelf, NO WORRIES! you have the ability to delete the book by simply clicking on the delete button. 
+## How to use:
+To get started, click on the Bookshelves tab on the navigation bar. It will navigate you to a page that shows a list of Locations for each bookshelf. At the bottom of the page, you have the ability to add a new location. You can click on any of the locations listed and it will show you a list of all the books in that bookshelf. Use the form at the bottom of the page to add a new book to the shelf. You can add as many as you want. You also have an Edit function to update the read status of your book or correct any typos you see. If you no longer own the book that is on the shelf, NO WORRIES! you have the ability to delete the book by simply clicking on the delete button. 
 
 # Instructions 
 

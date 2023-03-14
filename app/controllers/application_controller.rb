@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   # CREATE a new book
   post '/books' do
     book = Book.create(
-      title: params[:title],
+      title: params[:title], 
       author: params[:author],
       genre: params[:genre],
       bookshelf_id: params[:bookshelf_id],

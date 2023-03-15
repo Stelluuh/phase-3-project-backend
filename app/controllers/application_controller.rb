@@ -47,16 +47,16 @@ class ApplicationController < Sinatra::Base
   #------------Bookshelves-------------
 # READ all bookshelves
   get '/bookshelves' do
-    readers = Bookshelf.all
-    readers.to_json(include: :books)
+    bookshelf = Bookshelf.all
+    bookshelf.to_json(include: :books)
   end
 
-  # CREATE a reader
+  # CREATE a bookshelf
   post '/bookshelves' do
-    reader = Bookshelf.create(
+    bookshelf = Bookshelf.create(
       location: params[:location]
     )
-    reader.to_json(include: :books)
+    bookshelf.to_json(include: :books)
   end
   
 end
